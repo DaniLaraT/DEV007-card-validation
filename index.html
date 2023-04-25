@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  
+   <main class="fondo">
+    <header> <h1>ADORA JOYAS </h1>
+    <img src="/src/imagenes/logoA.png" alt="">
+    </header>
+    <div class="menu">
+      <a href="#">Quienes somos</a>
+      <a href="#">Novedades</a>
+      <a href="#">Brazaletes</a>
+      <a href="#">Anillos</a>
+      <a href="#">Collares</a>
+      <a href="#">Promociones</a>
+    </div>
+    <main class="arriba"><h3>¡Estas a un paso de obtener tus productos!</h3></main>
+  
+    <main class="juntar">
+      <section class="formulario">
+        <div id="form">
+          <h2>INGRESA TUS DATOS</h2> <br><br>
+                  <label for="nombre" class="label">NOMBRE DE TITULAR</label> <br>
+                  <input type="text" id="nombre" class="name" placeholder="Nombre y Apellido">
+                  <br>
+                  <label for="cardnumber" class="labelNumber">NUMERO DE TARJETA</label> <br>
+                  <input type="number" id="cardnumber" class="number" onkeypress="if(this.value.length==16) return false;" pattern="[0-9]+"  placeholder="XXXX XXXX XXXX XXXX" >
+                  <br>
+                  <label for="fecha" class="label">FECHA VENCIMIENTO TARJETA</label> <br>
+                    <input type="text" id="month" class="date" name="month" maxlength="2" pattern="[0-9]+"  placeholder="00">
+                    <input type="text" id="year" class="date" name="year" maxlength="2" pattern="[0-9]+"  placeholder="00">
+                    <label for="CVV" class="label">CVV</label> 
+                  <input type="password" id="cvv" class="cvv" name="cvv" maxlength="3" pattern="[0-9]+" placeholder="XXX">
+                  <!--aqui escribi un codigo para limpiar formulario-->
+                  <!--<input type="reset" value="Limpiar formulario">-->
+                <button id="boton" class="boton" value=""> CONFIRMAR </button>
+        </div>
+      </section>
+      <aside class="tarjeta">
+      <!--tarjetas con datos-->
+      <div class="tarjetas">
+            <div class="cardFront">
+              <img src="./imagenes/cardfront.png" alt="frente">
+              <div class="datosfrente">
+                <img src="./imagenes/logo.png" alt="">
+                <div>
+                    <p class="cardNumber"><div id="tnumero"></div></p>
+                    <br>
+                    <div class="namedate">
+                      <p class="cardName"><div id="tnombre"></div></p>
+                      <p class="date">
+                        <span id="card-mont"> <div id="tmonth"> </div> </span> <span  id="card-year"> <div id="tyear"> </div> </span>
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardBack">
+              <img src="./imagenes/cardback.png" alt="detras">
+              <div class="datosdeatras">
+                <p class="cardcvv"><div id="tcvv"></div></p>
+              </div>
+            </div>
+      </div>
+      </aside>
+    </main>
+    <div class="popup" id="popup">
+      <img src="/src/imagenes/logoA.png" alt="">
+      <h2><div id="mresult"></div></h2>
+      <p><div id="mencript"></div></p>
+      <button id="button" class="button">ok</button>
+    </div>         
+    <footer> 
+      <h5> Politicas de privacidad</h5><br>
+      <h5>Preguntas frecuentes</h5><br>
+      <h5>contacto</h5> <br>
+    </footer>
+    <script src="index.js" type="module"></script>
+   </main>
+  </body>
+</html>
