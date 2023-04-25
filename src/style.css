@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+
+}
+.fondo{
+    background-image: url(./imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+header{
+padding: 20px 0;
+background: #ffffffb9;
+justify-content: center; /*justificar de forma horizontal*/
+align-items: center /*arriba y abajo*/;
+display: flex; /*para que queden de lado*/
+}
+
+header img{
+    max-width: 6%
+}
+
+.menu {
+    overflow: hidden;
+    background-color: #4a1212;
+  }
+  
+  /* diseño enlaces*/
+.menu a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* color cuando pase mouse */
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.arriba{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    /*background-image: url(/src/imagenes/main.png);*/
+    background-size: 100%;
+    color: aliceblue;
+    background-color: #4a121239;
+}
+
+.juntar{
+    width: 100%;
+    height: calc(100vh-200px); /*esto es para que abarque hasta abajo sin considerar 100 de header y 100 de main arriva*/
+    justify-content: center; /*justificar de forma horizontal*/
+    align-items: center /*arriba y abajo*/;
+    display: flex; /*para que se junte de lado y no para abajo*/
+
+}   
+
+.formulario{
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    height: 100%;
+    padding: 30px;
+    text-align:left;
+   color: black;
+   align-items: center;
+}
+
+.name{
+    border: none;
+    border-bottom: 1px solid rgb(109, 12, 12);
+    margin: 8px 0;
+}
+
+.number{
+    border: none;
+    border-bottom: 1px solid rgb(109, 12, 12);
+    margin: 8px 0;
+}
+
+.date{
+    border: none;
+    border-bottom: 1px solid rgb(109, 12, 12);
+    width: 20%;
+    margin: 10px;
+}
+
+.cvv{
+    border: none;
+    border-bottom: 1px solid rgb(109, 12, 12);
+    width: 20%;
+}
+
+
+input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+input[type=number]:focus {
+    border: 3px solid #555;
+  }
+
+
+.boton{
+    background-color: rgb(210, 66, 66);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+
+  }
+.popup{ 
+    width: 300px;
+    background: #edd0d0;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translate(-50%, 0%) scale(1.6);
+    text-align: center;
+    padding: 0 30px 40px;
+    color: #333;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+
+}
+
+.popup img{
+    width: 60px;
+    margin-top: -50px;
+   background-color: #edd0d0;/*aqui falta poner el logo con fondo blanco en canva*/
+    border-radius:  50%; /*borde redondeado a circulo*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /*esto le dio sombra*/
+}
+
+.popup h2{ 
+    font-size: 38 px;
+    font-weight: 500;
+    margin:  30 px 0 10 px;
+}
+
+.button{ /*REVISAAAAAAR*/
+    width:  100%;
+    margin-top: 50px;
+    padding: 10 px 0;
+    background: orange;
+    color: #ffffff;
+    border: 100;
+    outline: auto;
+    font-size: 18px;
+    border-radius:  4px;
+    cursor: pointer;}
+
+.tarjeta{
+    width: 40%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* a esto no poner background*/
+.tarjetas{
+    padding: 2rem 1rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.tarjetas img{
+    
+    max-width: 100%;
+}
+
+.cardFront{
+    align-self: start;
+    max-width: 80%;
+    order: 2;
+    z-index: 1;
+    margin-top: -4rem;
+    position: relative;
+}
+
+
+.datosfrente{
+    position: absolute;
+    inset: 0;
+    color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    padding: 0.9rem;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: start;
+    text-transform: uppercase;
+}
+.datosfrente>div{
+    width: 100%;
+    justify-content: end;
+    font-size: 1.4rem;
+}
+ 
+.datosfrente img{
+    max-width: 3.5rem;
+}
+
+.cardNumber{
+    display: flex;
+    letter-spacing: 7px;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.namedate{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    font-size: 1rem;
+    
+}
+.datosdeatras{
+    position: absolute;
+    width: 110%;
+    inset: 0;
+    color: rgb(39, 35, 35);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 5rem;
+    font-size: 2rem;
+   
+/*si pones todo el fondo de un color ( background-color: rgba(40, 60, 40, .8); vas a ver que cubre toda la tarjeta e ir moviendolo para que quede donde quieres*/
+}
+
+.cardBack{
+    align-self: end;
+    width: 85%;
+    order: 1;
+    position: relative;
+}
+
+footer{
+    background-color: #706c6c;
+    display: center;
+}
