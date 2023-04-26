@@ -14,6 +14,10 @@ El proyecto consiste en una pagina Web la cual tiene como objetivo validar una T
 
 Se crea una simulación de un negocio de joyas en el cual el Cliente debe digitalizar sus datos para poder hacer efectiva su compra, si su tarjeta es valida entregara el mensaje “Tu compra fue realizada con éxito” y por el contrario si la tarjeta no es validada bajo el algoritmo de Luhn aparecerá un mensaje de “Ups!, tu tarjeta fue rechazada”.
 
+![foto5](/images/5.png)
+
+
+
 ## 2. Los objetivos generales de este proyecto son los siguientes
 
 * Trabajar en base a un boilerplate, la estructura básica de un proyecto en
@@ -45,21 +49,29 @@ Se crea una simulación de un negocio de joyas en el cual el Cliente debe digita
     * Sumar los números del Array. 
     * Verificar si el resultado es válido o no al dividirlo por 10 y su resultado es cero. 
     * Mostrar resultado en pantalla. 
+
 * Maskify: 
     * Pasar número a un String 
-    * Ver si el string tiene menos de 4 letras y si es así que retorne el string, si no, los dígitos anteriores reemplazarlos por #. 
+    * Ver si el string tiene menos de 4 letras y si es así que retorne el string, si no, los dígitos anteriores reemplazarlos por #.
+     
 * Realización de pruebas unitarias.
 * Realización de ventana modal para entrega de verificación final para el cliente donde entrega si tarjeta es válida o no y números enmascarados.
 
 ## 4. Instrucciones de uso.
-* Agregar datos de tarjeta de credito en campos correspondientes. 
+
+
+* Agregar datos de tarjeta de crédito en campos correspondientes. 
  ![foto1](/images/1.png)
+
 
 * Si aparece alerta, por favor completar todos los datos necesarios. 
  ![foto2](/images/2.png)
 
-* confirmar datos.
+
+* Confirmar datos.
  ![foto3](/images/3.png)
- 
-* Verificar si tarjeta fue validada o no, si fue validada tu compra fue realizada con exito. 
+
+
+* Verificar si tarjeta fue validada o no, si fue validada tu compra fue realizada con éxito. 
  ![foto4](/images/4.png)
+
