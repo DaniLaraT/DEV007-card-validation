@@ -7,15 +7,15 @@
 * [3. Funciones de proyecto](#3-funciones-del-proyecto)
 * [4. Actividades del proyecto](#4-consideraciones-técnicas)
 * [5. Instrucciones de uso](#5-Instrucciones-de-Uso)
+* [6. Mejoras a futuro del proyecto](#6-mejoras-a-futuro)
 
 ## 1. Resumen del proyecto
 
-El proyecto consiste en una pagina Web la cual tiene como objetivo validar una Tarjeta de credito a traves del algoritmo de Luhn. 
+El proyecto consiste en una aplicacion Web la cual tiene como objetivo validar una Tarjeta de credito a traves del algoritmo de Luhn. 
 
 Se crea una simulación de un negocio de joyas en el cual el Cliente debe digitalizar sus datos para poder hacer efectiva su compra, si su tarjeta es valida entregara el mensaje “Tu compra fue realizada con éxito” y por el contrario si la tarjeta no es validada bajo el algoritmo de Luhn aparecerá un mensaje de “Ups!, tu tarjeta fue rechazada”.
 
 ![foto5](/images/5.png)
-
 
 
 ## 2. Los objetivos generales de este proyecto son los siguientes
@@ -28,7 +28,9 @@ Se crea una simulación de un negocio de joyas en el cual el Cliente debe digita
   en JavaScript
 * Implementar control de versiones con git (y la plataforma github)
 
-## 3. Algunas de las funciones que el proyecto realiza son: 
+## 3. Funciones de proyecto: 
+
+### Luego de finalizar el proyecto, la aplicacion Web puede realizar: 
 
 * Insertar un numero que quieres validar, ademas de otros datos importantes del cliente para que nuestro sitio para que la experiencia del usuario sea mas real. 
 * Usar solo caracteres numéricos (dígitos) en la tarjeta a validar [0-9].  
@@ -37,7 +39,10 @@ Se crea una simulación de un negocio de joyas en el cual el Cliente debe digita
   4 caracteres.  
 * No debes poder ingresar un campo vacío.  
 
-## 4. Actividades dentro del proyecto. 
+## 4. Actividades del proyecto: 
+
+### Las actividades realizadas en este proyecto en orden cronologico son: 
+
 * Crear un prototipo 
 * Creación de Esqueleto de HTML básico y sus respectivas secciones.
 * Crear Formulario con datos principales del cliente. 
@@ -53,11 +58,11 @@ Se crea una simulación de un negocio de joyas en el cual el Cliente debe digita
 * Maskify: 
     * Pasar número a un String 
     * Ver si el string tiene menos de 4 letras y si es así que retorne el string, si no, los dígitos anteriores reemplazarlos por #.
-     
+
 * Realización de pruebas unitarias.
 * Realización de ventana modal para entrega de verificación final para el cliente donde entrega si tarjeta es válida o no y números enmascarados.
 
-## 4. Instrucciones de uso.
+## 4. Instrucciones de uso:
 
 
 * Agregar datos de tarjeta de crédito en campos correspondientes. 
@@ -74,4 +79,9 @@ Se crea una simulación de un negocio de joyas en el cual el Cliente debe digita
 
 * Verificar si tarjeta fue validada o no, si fue validada tu compra fue realizada con éxito. 
  ![foto4](/images/4.png)
+
+ ## 5. Mejoras a futuro:
+
+ * Mostrar la franquicia de tarjeta
+ * Dar formato de Numeros de tarjeta (Ej 0000 0000 0000 0000). 
 
