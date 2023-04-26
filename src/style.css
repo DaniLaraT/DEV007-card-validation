@@ -163,7 +163,7 @@ input[type=number]:focus {
     width:  100%;
     margin-top: 50px;
     padding: 10 px 0;
-    background: orange;
+    background-color: rgb(210, 66, 66);
     color: #ffffff;
     border: 100;
     outline: auto;
