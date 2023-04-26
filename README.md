@@ -53,7 +53,13 @@ Se crea una simulación de un negocio de joyas en el cual el Cliente debe digita
 
 ## 4. Instrucciones de uso.
 * Agregar datos de tarjeta de credito en campos correspondientes. 
+ ![foto1](/images/1.png)
+
 * Si aparece alerta, por favor completar todos los datos necesarios. 
-* confirmar datos. 
-* Verificar si tarjeta fue validada o no, si fue validada tu compra fue realizada con exito. 
+ ![foto2](/images/2.png)
+
+* confirmar datos.
+ ![foto3](/images/3.png)
  
+* Verificar si tarjeta fue validada o no, si fue validada tu compra fue realizada con exito. 
+ ![foto4](/images/4.png)
