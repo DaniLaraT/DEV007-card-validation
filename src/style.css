@@ -11,12 +11,11 @@
 .fondo{
     background-image: url(./imagenes/fondo.png);
     background-repeat: no-repeat;
-    background-position: top;
     background-size: 100%;
 }
 
 header{
-padding: 20px 0;
+padding: 10px 0;
 background: #ffffffb9;
 justify-content: center; /*justificar de forma horizontal*/
 align-items: center /*arriba y abajo*/;
@@ -29,17 +28,15 @@ header img{
 
 .menu {
     overflow: hidden;
-    background-color: #4a1212;
+    background-color: #4e1313;
   }
   
   /* diseño enlaces*/
 .menu a {
-    float: right;
-    display: block;
+    float: left;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; /*Evita que parezcan links*/
   }
   
   /* color cuando pase mouse */
@@ -49,13 +46,10 @@ header img{
   }
 
 .arriba{
-    width: 100%;
-    height: 40px;
+    width: 100%; /*Largo*/
+    height: 40px;/*Ancho*/
     text-align: center;
-    justify-content: center;
-    align-content: center;
     /*background-image: url(/src/imagenes/main.png);*/
-    background-size: 100%;
     color: aliceblue;
     background-color: #4a121239;
 }
@@ -72,12 +66,9 @@ header img{
 .formulario{
     background-color: rgb(255, 255, 255);
     width: 40%;
-    height: 100%;
     padding: 30px;
     text-align:left;
-   color: black;
-   align-items: center;
-}
+   color: black;}
 
 .name{
     border: none;
@@ -116,33 +107,29 @@ input[type=number]:focus {
 
 .boton{
     background-color: rgb(210, 66, 66);
-    border: none;
+    border: none; 
     color: white;
     padding: 16px 32px;
-    margin: 4px 2px;
-    cursor: pointer;
     width: 100%;
 
   }
 .popup{ 
-    width: 300px;
+    width: 30%; /*Ancho*/
     background: #edd0d0;
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
+    border-radius: 6px; /*redondear esquinas*/
+    position:absolute;
     left: 30%;
     transform: translate(-50%, 0%) scale(1.6);
     text-align: center;
     padding: 0 30px 40px;
     color: #333;
-    visibility: hidden;
-    z-index: 2;
+    visibility: hidden; /**/
+    z-index: 4; /*posicion respecto a los otros elementos*/
 }
 
 .open-popup{
-    visibility: visible;
+    visibility: visible; /*aqui se abre cuando se selecciona funcion*/
     top: 50%;
-
 }
 
 .popup img{
@@ -153,27 +140,18 @@ input[type=number]:focus {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /*esto le dio sombra*/
 }
 
-.popup h2{ 
-    font-size: 38 px;
-    font-weight: 500;
-    margin:  30 px 0 10 px;
-}
 
-.button{ /*REVISAAAAAAR*/
-    width:  100%;
+.button{
     margin-top: 50px;
-    padding: 10 px 0;
     background-color: rgb(210, 66, 66);
-    color: #ffffff;
-    border: 100;
-    outline: auto;
-    font-size: 18px;
-    border-radius:  4px;
-    cursor: pointer;}
+    border: none; 
+    color: white;
+    padding: 10px 20px;
+    width: 30%;}
+
 
 .tarjeta{
     width: 40%;
-    height: 100%;
 }
 
 footer {
@@ -191,16 +169,15 @@ footer {
 }
 
 .tarjetas img{
-    
-    max-width: 100%;
+    width: 100%;
 }
 
 .cardFront{
     align-self: start;
-    max-width: 80%;
-    order: 2;
-    z-index: 1;
-    margin-top: -4rem;
+    width: 80%;
+    order: 2; /*respecto a otra*/
+    z-index: 1; /*Posicion*/
+    margin-top: -4rem; /*para que quede encima*/
     position: relative;
 }
 
@@ -213,8 +190,6 @@ footer {
     flex-direction: column;
     padding: 0.9rem;
     justify-content: space-between;
-    align-content: flex-start;
-    align-items: start;
     text-transform: uppercase;
 }
 .datosfrente>div{
@@ -233,6 +208,7 @@ footer {
     font-size: 1.5rem;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 50px;
 }
 
 .namedate{
@@ -250,8 +226,8 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 5rem;
-    font-size: 2rem;
+    padding: 70px;
+    font-size: 30px;
    
 /*si pones todo el fondo de un color ( background-color: rgba(40, 60, 40, .8); vas a ver que cubre toda la tarjeta e ir moviendolo para que quede donde quieres*/
 }

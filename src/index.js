@@ -1,4 +1,7 @@
 
+import validator from './validator.js';
+
+
 const boton=document.getElementById("boton");
 //console.log(boton);
 boton.addEventListener('click', mostrar);
@@ -13,7 +16,7 @@ function mostrar() {
   const  cvv= document.getElementById("cvv").value;
   //sin campos vacios.
   if (nombre ==="" || number==="" || month ==="" || year ==="" ||cvv ==="") {
-    alert("Por favor completa todos los campos"); return;} // este ultimo return evita que se envie cero por no tener datos
+    alert("Por favor completa todos los campos"); return;} // este ultimo return evita que se envie cero por no tener datos y asi no sale true
 
 
   //console.log("Nombre: " + nombre);
@@ -30,8 +33,8 @@ function mostrar() {
   const tcvv= document.getElementById("tcvv");
   tcvv.innerHTML= cvv;
 
-  const tmonth= document.getElementById("tmonth");
-  tmonth.innerHTML= month + "/" + year;
+  const tdate= document.getElementById("tdate");
+  tdate.innerHTML= month + "/" + year;
 
   if (validator.isValid(number)) {
     document.getElementById("mresult").innerHTML = "Tu compra fue realizada con exito";
@@ -64,6 +67,5 @@ function mostrar() {
 // }
 
 
-import validator from './validator.js';
 
 //console.log(validator);

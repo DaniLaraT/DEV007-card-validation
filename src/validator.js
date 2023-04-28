@@ -13,17 +13,19 @@ const validator = {
     }
     //console.log(inverso);//[9, 16, 7, 12, 5, 8, 3, 4, 1]
     // sumar numeros de array, separando los >10 (1+0=1)
-    let suma = 0;
+    let suma = 0; //Esta variable sumara lo acumulado.
+    
+    //se crea un contador que ira uno por uno. 
     for (let i = 0; i < inverso.length; i++) {
-      let valor = inverso[i];
-      while (valor >= 10) {
+      let valor = inverso[i]; //se crea la variable valor para considerar e nuevo array
+      while (valor >= 10) {  //si estos valores son mayores o iguales a 10 se pasaran. 
         const digitos = valor.toString().split('').map(Number);
-        valor = 0;
-        for (let j = 0; j < digitos.length; j++) {
-          valor += digitos[j];
+        valor = 0; //se da valor cero a la variable 
+        for (let j = 0; j < digitos.length; j++) {  //se recuperan los datos separados para sumarlos. abajo.
+          valor += digitos[j]; //se entrega todo a la variable valor.
         }
       }
-      suma += valor;
+      suma += valor; //se entrega todo lo recaudado a suma
     }
     //indicar si la tarjeta es valida o no
     if (suma % 10 === 0) {
