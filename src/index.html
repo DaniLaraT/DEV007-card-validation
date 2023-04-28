@@ -23,7 +23,6 @@
   
     <main class="juntar">
       <section class="formulario">
-        <div id="form">
           <h2>INGRESA TUS DATOS</h2> <br><br>
                   <label for="nombre" class="label">NOMBRE DE TITULAR</label> <br>
                   <input type="text" id="nombre" class="name" placeholder="Nombre y Apellido">
@@ -39,34 +38,33 @@
                   <!--aqui escribi un codigo para limpiar formulario
                   <input type="reset" value="Limpiar formulario">-->
                 <button id="boton" class="boton" value=""> CONFIRMAR </button>
-        </div>
       </section>
       <aside class="tarjeta">
       <!--tarjetas con datos-->
-      <div class="tarjetas">
-            <div class="cardFront">
-              <img src="./imagenes/cardfront.png" alt="frente">
-              <div class="datosfrente">
-                <img src="./imagenes/logo.png" alt="">
-                <div>
-                    <p class="cardNumber"><div id="tnumero"></div></p>
-                    <br>
-                    <div class="namedate">
-                      <p class="cardName"><div id="tnombre"></div></p>
-                      <p class="date">
-                        <span id="card-mont"> <div id="tdate"> </div> </span>
-                      </p>
-                    </div>
+        <div class="tarjetas">
+              <div class="cardFront">
+                <img src="./imagenes/cardfront.png" alt="frente">
+                <div class="datosfrente">
+                  <img src="./imagenes/logo.png" alt="">
+                  <div>
+                      <p class="cardNumber"><div id="tnumero"></div></p>
+                      <br>
+                      <div class="namedate">
+                        <p class="cardName"><div id="tnombre"></div></p>
+                        <p class="date">
+                          <span id="card-mont"> <div id="tdate"> </div> </span>
+                        </p>
+                      </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="cardBack">
-              <img src="./imagenes/cardback.png" alt="detras">
-              <div class="datosdeatras">
-                <p class="cardcvv"><div id="tcvv"></div></p>
+              <div class="cardBack">
+                <img src="./imagenes/cardback.png" alt="detras">
+                <div class="datosdeatras">
+                  <p class="cardcvv"><div id="tcvv"></div></p>
+                </div>
               </div>
-            </div>
-      </div>
+        </div>
       </aside>
     </main>
     <div class="popup" id="popup">

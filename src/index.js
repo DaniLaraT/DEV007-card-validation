@@ -1,6 +1,6 @@
 
 import validator from './validator.js';
-
+//console.log(validator);
 
 const boton=document.getElementById("boton");
 //console.log(boton);
@@ -68,4 +68,3 @@ function mostrar() {
 
 
 
-//console.log(validator);

@@ -3,7 +3,7 @@ const validator = {
   isValid: function validar(number){
 
     //convertir el number de input en un array
-    const arrayNumber = number.toString().split('').map(number => parseInt(number));
+    const arrayNumber = number.toString().split('').map(Number);
     //console.log(arrayNumber);// [1,2,3,4,5,6,7,8,9]
     const inverso=arrayNumber.reverse();
     //console.log(inverso);// [9,8,7,6,5,4,3,2,1]
